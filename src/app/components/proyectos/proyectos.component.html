@@ -1,0 +1,40 @@
+<app-sidebar></app-sidebar>
+
+<div class="main">
+    <!-- Mis Proyectos -->
+    <div class="proyectos text-center mt-4" id="proyectos">
+        <p>Algunos de mis proyectos.</p>
+        <h2>Mis proyectos</h2>
+        <hr class="linea bg-primary" style="width: 30%; margin: 20px auto; margin-bottom: 50px;">
+
+        <div class="proyecto d-flex flex-wrap justify-content-around">
+            <ng-container *ngFor="let proyecto of proyectos.slice(0, proyectosAMostrar); let i = index">
+                <div class="proyecto_izquierda proyecto_item col-md-5 mb-3 card hoverable"
+                    (click)="abrirModal(proyecto)">
+                    <div class="position-relative d-block">
+                        <img [src]="proyecto.imagen" alt="Foto Proyecto {{ i + 1 }}" class="img-fluid hoverable">
+                        <div class="play-icon position-absolute top-50 start-50 translate-middle text-light">
+                            <i class="fas fa-play fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="información_proyecto text-center p-3">
+                        <h2 class="fs-4 mt-4">{{proyecto.titulo}}</h2>
+                        <p class="información_app">{{proyecto.descripcion}}</p>
+                        <a href={{proyecto.github}} target="_blank" class="text-dark">
+                            <i class="fab fa-github fa-2x"></i></a>
+                        <!-- Se ha añadido la clase 'fa-2x' para hacer el icono más grande -->
+                        <p class="lenguaje_ fs-6">{{proyecto.tecnologias}}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+
+        <button *ngIf="proyectosAMostrar < proyectos.length" id="ver-mas" (click)="verMasProyectos()"
+            class="btn btn-primary">Ver más</button>
+        <div id="scroll-to-top">
+            <a href="#top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+</div>

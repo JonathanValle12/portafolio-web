@@ -1,0 +1,56 @@
+<app-sidebar></app-sidebar>
+
+<div class="main">
+    <!-- Contactame Formulario -->
+    <div class="contactame container" style="max-width: 600px; margin: 150px auto;">
+        <p class="text-center">Ahora o nunca!</p>
+        <h2 class="text-center mb-4" style="color: #175793;">Contactame</h2>
+        <hr class="mb-5">
+        <form [formGroup]="enviarForm" (ngSubmit)="onSubmitForm()" class="mb-5">
+            <div class="mb-4">
+                <input type="text" name="name" id="name" placeholder="Nombre" formControlName="name"
+                    class="form-control"
+                    [class.is-invalid]="enviarForm.get('name')?.touched && enviarForm.get('name')?.invalid" />
+                <div *ngIf="enviarForm.get('name')?.touched && enviarForm.get('name')?.errors as errors"
+                    class="invalid-feedback">
+                    <div *ngIf="errors['required']">El nombre es obligatorio</div>
+                    <div *ngIf="errors['minlength'] && !errors['required']">Mínimo 3 caracteres</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <input type="email" name="email" id="email" placeholder="Email" formControlName="email"
+                    class="form-control"
+                    [class.is-invalid]="enviarForm.get('email')?.touched && enviarForm.get('email')?.invalid" />
+                <div *ngIf="enviarForm.get('email')?.touched && enviarForm.get('email')?.errors as errors"
+                    class="invalid-feedback">
+                    <div *ngIf="errors['required']">El email es obligatorio</div>
+                    <div *ngIf="errors['pattern'] && !errors['required']">Email no válido</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <input type="text" name="subject" id="subject" placeholder="Asunto" formControlName="subject"
+                    class="form-control"
+                    [class.is-invalid]="enviarForm.get('subject')?.touched && enviarForm.get('subject')?.invalid" />
+                <div *ngIf="enviarForm.get('subject')?.touched && enviarForm.get('subject')?.errors as errors"
+                    class="invalid-feedback">
+                    <div *ngIf="errors['required']">El asunto es obligatorio</div>
+                    <div *ngIf="errors['minlength'] && !errors['required']">Mínimo 5 caracteres</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje" formControlName="message"
+                    class="form-control"
+                    [class.is-invalid]="enviarForm.get('message')?.touched && enviarForm.get('message')?.invalid"></textarea>
+                <div *ngIf="enviarForm.get('message')?.touched && enviarForm.get('message')?.errors as errors"
+                    class="invalid-feedback">
+                    <div *ngIf="errors['required']">El mensaje es obligatorio</div>
+                    <div *ngIf="errors['minlength'] && !errors['required']">Mínimo 10 caracteres</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" [disabled]="!enviarForm.valid">Enviar</button>
+        </form>
+        <p class="text-center">Si quieres contactar conmigo, puedes hacerlo a través de las
+            redes sociales o llenando el formulario de contacto. Te responderé lo antes posible.</p>
+    </div>
+
+</div>

@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    background-image: url("../img/fondo.jpg");
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+.sidebar {
+    background-color: #2C3E50; /* Cambiado a un tono más oscuro */
+    width: 320px;
+    min-height: 100vh;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para un toque de profundidad */
+}
+
+.sidebar img {
+    display: block;
+    width: 160px;
+    height: 160px; /* Ajustado el tamaño */
+    object-fit: cover; /* Para mantener la proporción y recortar la imagen */
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Cambiado a un tono más claro */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease-in-out; /* Transición suave del color */
+    line-height: 50px;
+}
+
+.sidebar ul li a:hover {
+    color: #3498db; /* Cambiado a un tono azul al pasar el ratón */
+}
+
+.main {
+    flex: 1;
+    /* Establecer un margen izquierdo para evitar solapamiento con el encabezado */
+    margin-left: 340px;
+    padding: 20px;
+    /* Agregar un relleno para separar el contenido del margen */
+}
+
+.main .burbuja {
+    border-radius: 50%;
+    background-color: #2C3E50;
+    opacity: 0.3;
+    bottom: -200px;
+    position: absolute;
+
+    animation: burbujas 3s linear infinite;
+    position: fixed;
+
+    z-index: 99999999999;
+}
+.main .burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 20%;
+    animation-duration: 3s;
+}
+.main .burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.main .burbuja:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 65%;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
+}
+.main .burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+.main .burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 75%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.main .burbuja:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+.main .burbuja:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+.main .burbuja:nth-child(8) {
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.main .burbuja:nth-child(9) {
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.main .burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    30% {
+        transform: translateX();
+    }
+    50% {
+        opacity: .4;
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+.main .presentacion {
+    text-align: center;
+    line-height: 30px;
+}
+
+.presentacion .yo_2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 100px;
+}
+
+.presentacion h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 45px;
+    color: #12588B;
+}
+
+.presentacion .botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.presentacion button {
+    border: none;
+    border: 1px solid #12588B;
+    background-color: #12588B;
+    padding: 8px 15px;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.presentacion button:hover {
+    transition: all .5s;
+    background-color: #0f4871;
+}
+
+.redes_sociales {
+    width: 0;
+}
+
+.redes_sociales i {
+    display: block;
+    line-height: 40px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.redes_sociales a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sobre_mi {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.sobre_mi h2 {
+    font-size: 45px;
+    color: #12588B;
+    -webkit-text-stroke: 1px #000;
+}
+
+.sobre_mi p {
+    width: 80%;
+    line-height: 28px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.sobre_mi h3 {
+    font-size: 18px;
+    color: #12588B;
+    width: 60%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+/* Contenedor principal para los bloques de información */
+.view_stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas con tamaño igual */
+    grid-gap: 20px;
+    /* Espacio entre los bloques */
+}
+
+/* Estilo base para los bloques de información */
+.view_stack div {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Agregar un borde a cada bloque si deseas */
+}
+
+.sobre_mi .view_stack .frontend,
+.sobre_mi .view_stack .backend,
+.sobre_mi .view_stack .herramientas {
+    margin-top: 30px;
+    /* Añade un margen superior */
+}
+
+.sobre_mi .view_stack div h3 {
+    width: 100%;
+}
+
+.sobre_mi img {
+    width: 70px;
+    height: 70px;
+}
+
+.sobre_mi .view_stack .contenedor_stack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sobre_mi .view_stack div span {
+    border: 1px solid #585858;
+    background-color: #585858;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* Agrega margen inferior para separar los elementos */
+}
+
+.proyecto_izquierda {
+    position: relative;
+}
+.proyecto_izquierda .play-icon {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    color: rgb(235, 235, 235);
+    
+}
+.proyecto_izquierda .play-icon i {
+    font-size: 35px;
+    color: #fff; /* Cambia el color según tu diseño */
+    transition: transform 0.3s ease-in-out;
+    opacity: .8;
+}
+.proyectos {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.proyectos .linea {
+    width: 30%;
+    margin: 10px auto 50px;
+    border: 1px solid #12588B;
+}
+
+.proyectos p,
+.proyectos h2 {
+    margin-bottom: 20px;
+}
+
+.proyectos h2 {
+    font-size: 45px;
+    color: #12588B;
+    -webkit-text-stroke: 1px #000;
+}
+
+.proyectos .proyecto>div {
+    width: 45%;
+    /* Cambiado de 45% a 30% para que quepan tres en una fila */
+    margin: 1.5%;
+    /* Añadido margen entre los proyectos */
+    border: 1px solid #12588B;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proyectos .información_proyecto .información_app {
+    background-color: #12588B;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.galeria-imagen {
+    width: 200px;  /* Ajusta el ancho según tus necesidades */
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de aspecto y cubre el contenedor */
+  }
+  .card.hoverable:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #007BFF;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    /* Ocultar al principio */
+}
+
+#scroll-to-top a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#scroll-to-top i {
+    font-size: 20px;
+}
+
+#scroll-to-top.active {
+    display: block;
+    /* Mostrar cuando se desplaza hacia abajo */
+}
+
+.contactame hr {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #12588B;
+}
+
+#ver-mas {
+    width: 100px; /* Ancho fijo para el botón */
+    height: 40px; /* Altura fija para el botón */
+    border: none; /* Eliminar el borde para un aspecto más limpio */
+    border-radius: 5px;
+    background-color: #12588B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s ease; /* Agregar una transición suave para cambiar el color de fondo */
+    margin-top: 20px;
+}
+
+#ver-mas:hover {
+    background-color: #0d4370; /* Cambiar el color de fondo al pasar el ratón */
+}
+/* Agrega una clase "hidden" para ocultar los proyectos */
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .burbuja:nth-child(6),
+    .burbuja:nth-child(7),
+    .burbuja:nth-child(2),
+    .burbuja:nth-child(4),
+    .burbuja:nth-child(3),
+    .burbuja:nth-child(1) {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1150px) {
+
+    .proyectos .proyecto>div {
+        width: 80%;
+    }
+    .view_stack {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contactame {
+        width: 80%;
+    }
+    .sidebar {
+        width: 250px;
+    }
+    .main {
+        margin-left: 250px;
+    }
+    .proyectos .proyecto>div {
+        width: 100%;
+    }
+    .view_stack {
+        width: 100%;
+    }
+    .sobre_mi p {
+        width: 100%;
+    }
+    .sobre_mi h3 {
+        width: 100%;
+    }
+    .redes_sociales {
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .redes_sociales i {
+        font-size: 30px;
+        margin: 20px; /* Espacio entre los iconos, ajusta según sea necesario */
+        color: #333; /* Color de los iconos, establecido en gris oscuro */
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .redes_sociales i:hover {
+        color: #3498db; /* Color al pasar el ratón */
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .burbuja {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+        min-height: 0px;
+        max-height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; 
+
+        z-index: 99999999;
+    }
+
+    .sidebar ul li{
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .sidebar img {
+        width: 55px;
+        height: 55px;
+        margin: 20px;
+    }
+    .main {  
+        margin: 80px 0;
+    }
+    .proyectos .proyecto {
+        display: flex;
+        justify-content: center;
+    }
+    .proyectos .proyecto>div {
+        width: 45%;
+    }
+    .view_stack {
+        grid-template-columns: repeat(1, 1fr);
+        width: 93%;
+        margin: auto;
+    }
+    .proyecto .información_proyecto p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .proyectos .proyecto>div {
+        width: 100%;
+    }
+    .view_stack {
+        width: 97%;
+    }
+
+    .sidebar ul li {
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 45px;
+        height: 45px;
+    }
+
+}

@@ -1,0 +1,29 @@
+<div class="modal-header bg-dark text-white">
+    <h4 class="modal-title">{{ proyecto.titulo }}</h4>
+    <span aria-label="Close" (click)="cerrarModal()" style="cursor: pointer; font-size: 2rem; color: white; position: absolute; top: 10px; right: 10px;">&times;</span>
+</div>
+<div class="modal-body">
+    <div class="información_proyecto text-center">
+        <p class="información_app">{{ proyecto.descripcion }}</p>
+        <a href="{{ proyecto.github }}" target="_blank" class="btn btn-dark">
+            <i class="fab fa-github"></i> Ver en GitHub
+        </a>
+        <p class="lenguaje_ fs-6 mt-3">{{ proyecto.tecnologias }}</p>
+    </div>
+
+    <div class="modal-body">
+        <!-- Galería de imágenes -->
+        <div class="galeria">
+            <div class="row">
+                <div *ngFor="let imagen of proyecto.imagenes; let i = index" class="col-md-4 mb-3">
+                    <div class="card hoverable">
+                        <img [src]="imagen.ruta" alt="Imagen de proyecto" class="card-img-top galeria-imagen shadow" (click)="abrirModal(i)">
+                        <div class="card-body">
+                            <p class="card-text">{{ imagen.descripcion || 'Descripción no disponible' }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

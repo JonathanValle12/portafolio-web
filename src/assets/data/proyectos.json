@@ -1,0 +1,156 @@
+[
+    {
+        "titulo": "La Serpiente",
+        "imagen": "assets/img/proyecto_snake.PNG",
+        "descripcion": "Clásico juego de la serpiente. Controla la serpiente, recolecta manzanas y evita colisiones. ¡Revive la diversión retro!",
+        "github": "https://github.com/JonathanValle12/snake.git",
+        "tecnologias": "HTML5 CSS3 JAVASCRIPT",
+        "imagenes": [
+            {
+                "ruta": "assets/img/snake_inicio.PNG",
+                "descripcion": "Comenzar Snake"
+            },
+            {
+                "ruta": "assets/img/snake_game.PNG",
+                "descripcion": "Visualización de la partida"
+            },
+            {
+                "ruta": "assets/img/snake_registrar_score.PNG",
+                "descripcion": "En caso de perder"
+            },
+            {
+                "ruta": "assets/img/snake_score_save.PNG",
+                "descripcion": "Registrar puntuación en el localStorage"
+            },
+            {
+                "ruta": "assets/img/snake_ver_score.PNG",
+                "descripcion": "Visualización de la puntuación"
+            }
+        ]
+    },
+    {
+        "titulo": "NAME APP",
+        "imagen": "assets/img/peliculas.jpg",
+        "descripcion": "Información de la APP",
+        "github": "https://github.com/JonathanValle12/buscaminas.git",
+        "tecnologias": "ReactJS Html5 Bootstrap",
+        "imagenes": [
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 1"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 2"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 3"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 4"
+            }
+        ]
+    },
+    {
+        "titulo": "NAME APP",
+        "imagen": "assets/img/peliculas.jpg",
+        "descripcion": "Información de la APP",
+        "github": "https://github.com/JonathanValle12/buscaminas.git",
+        "tecnologias": "ReactJS Html5 Bootstrap",
+        "imagenes": [
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 1"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 2"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 3"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 4"
+            }
+        ]
+    },
+    {
+        "titulo": "NAME APP",
+        "imagen": "assets/img/peliculas.jpg",
+        "descripcion": "Información de la APP",
+        "github": "https://github.com/JonathanValle12/buscaminas.git",
+        "tecnologias": "ReactJS Html5 Bootstrap",
+        "imagenes": [
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 1"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 2"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 3"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 4"
+            }
+        ]
+    },
+    {
+        "titulo": "NAME APP",
+        "imagen": "assets/img/peliculas.jpg",
+        "descripcion": "Información de la APP",
+        "github": "https://github.com/JonathanValle12/buscaminas.git",
+        "tecnologias": "ReactJS Html5 Bootstrap",
+        "imagenes": [
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 1"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 2"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 3"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 4"
+            }
+        ]
+    },
+    {
+        "titulo": "NAME APP",
+        "imagen": "assets/img/peliculas.jpg",
+        "descripcion": "Información de la APP",
+        "github": "https://github.com/JonathanValle12/buscaminas.git",
+        "tecnologias": "ReactJS Html5 Bootstrap",
+        "imagenes": [
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 1"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 2"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 3"
+            },
+            {
+                "ruta": "assets/img/peliculas.jpg",
+                "descripcion": "Imagen 4"
+            }
+        ]
+    }
+]
