@@ -31,10 +31,11 @@
 
         <button *ngIf="proyectosAMostrar < proyectos.length" id="ver-mas" (click)="verMasProyectos()"
             class="btn btn-primary">Ver más</button>
-        <div id="scroll-to-top">
-            <a href="#top">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>
+            <div *ngIf="mostrarFlechaArriba" class="position-fixed bottom-0 end-0 mb-4 mr-4">
+                <button (click)="irArriba()" class="btn btn-primary">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            
     </div>
 </div>

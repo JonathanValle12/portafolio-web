@@ -19,7 +19,6 @@ export class ProyectoModalComponent implements OnInit {
   if (this.proyecto && this.proyecto.imagenes) {
     this.proyecto.imagenes.forEach((imagenInfo: any, index: number) => {
       
-      console.log(imagenInfo);
       this.images.push({
         src: imagenInfo.ruta,
         thumb: imagenInfo,
@@ -32,8 +31,6 @@ export class ProyectoModalComponent implements OnInit {
   
 
 abrirModal(index: number): void {
-  console.log('Abriendo modal para la imagen', index);
-  console.log(this.images);
   // Abre el cuadro de luz con la imagen seleccionada y ajusta el tamaño
   this.lightbox.open(this.images, index);
 }
