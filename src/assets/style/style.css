@@ -65,7 +65,7 @@ body, html {
     /* Agregar un relleno para separar el contenido del margen */
 }
 
-.main .burbuja {
+.burbuja {
     border-radius: 50%;
     background-color: #2C3E50;
     opacity: 0.3;
@@ -77,20 +77,20 @@ body, html {
 
     z-index: 99999999999;
 }
-.main .burbuja:nth-child(1) {
+.burbuja:nth-child(1) {
     width: 80px;
     height: 80px;
     left: 20%;
     animation-duration: 3s;
 }
-.main .burbuja:nth-child(2) {
+.burbuja:nth-child(2) {
     width: 100px;
     height: 100px;
     left: 35%;
     animation-duration: 3s;
     animation-delay: 2s;
 }
-.main .burbuja:nth-child(3) {
+.burbuja:nth-child(3) {
     width: 20px;
     height: 20px;
     left: 65%;
@@ -104,42 +104,42 @@ body, html {
     animation-duration: 6s;
     animation-delay: 3s;
 }
-.main .burbuja:nth-child(5) {
+.burbuja:nth-child(5) {
     width: 70px;
     height: 70px;
     left: 75%;
     animation-duration: 3s;
     animation-delay: 1s;
 }
-.main .burbuja:nth-child(6) {
+.burbuja:nth-child(6) {
     width: 20px;
     height: 20px;
     left: 50%;
     animation-duration: 4s;
     animation-delay: 5s;
 }
-.main .burbuja:nth-child(7) {
+.burbuja:nth-child(7) {
     width: 20px;
     height: 20px;
     left: 50%;
     animation-duration: 4s;
     animation-delay: 5s;
 }
-.main .burbuja:nth-child(8) {
+.burbuja:nth-child(8) {
     width: 100px;
     height: 100px;
     left: 52%;
     animation-duration: 3s;
     animation-delay: 2s;
 }
-.main .burbuja:nth-child(9) {
+.burbuja:nth-child(9) {
     width: 65px;
     height: 65px;
     left: 51%;
     animation-duration: 3s;
     animation-delay: 2s;
 }
-.main .burbuja:nth-child(10) {
+.burbuja:nth-child(10) {
     width: 40px;
     height: 40px;
     left: 35%;
